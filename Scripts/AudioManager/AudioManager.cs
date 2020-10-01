@@ -9,7 +9,7 @@ public class AudioManager : MonoBehaviour
     public static AudioManager instance;
     [Tooltip("How many audio sources to pool on Start()")]
     public int poolingAmount = 10;
-    [Tooltip("Enable this to, in the event more sources are requested than available, pooler can take it upon itself to add more.")]
+    [Tooltip("Enable this so, in the event more sources are requested than available, the pooler can take it upon itself to add more.")]
     public bool overflowProtection = true;
 
     //A queue of ready to use audio sources
@@ -65,6 +65,7 @@ public class AudioManager : MonoBehaviour
     private void AddEntry()
     {
         cacheObj = new GameObject();
+        cacheObj.transform.parent = transform;
         cacheSource = cacheObj.AddComponent<AudioSource>();
         cacheSource.playOnAwake = false;
         cacheObj.SetActive(false);
