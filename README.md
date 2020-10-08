@@ -8,7 +8,7 @@ An AudioManager and pooler for Unity Engine.
 
 1. Adjusts the pooling settings according to your needs.
 
-1. From within your other scripts, just call AudioManager.PlaySound2D or AudioManager.PlaySound3D for 2D (UI) or 3D (Game) sounds respectively3 and pass the audio clip you wish to play as a parameter.
+1. From within your other scripts, just call AudioManager.PlaySound2D or AudioManager.PlaySound3D for 2D (UI) or 3D (Game) sounds respectively and pass the audio clip you wish to play as a parameter.
 
 1. The AudioManager will automatically return finished audio files back into its own queue.
 
