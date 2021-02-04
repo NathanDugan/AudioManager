@@ -216,7 +216,7 @@ public class AudioManager : MonoBehaviour
     {
         instance.cacheSource = instance.GetAudioSource();
         instance.cacheSource.clip = clip;
-        instance.cacheSource.volume = 1f;
+        instance.cacheSource.volume = volume;
         instance.cacheSource.loop = false;
         instance.cacheSource.spatialBlend = 1.0f;
         instance.cacheSource.gameObject.transform.position = position;
@@ -235,7 +235,7 @@ public class AudioManager : MonoBehaviour
     {
         instance.cacheSource = instance.GetAudioSource();
         instance.cacheSource.clip = clip;
-        instance.cacheSource.volume = 1f;
+        instance.cacheSource.volume = volume;
         instance.cacheSource.pitch = pitch;
         instance.cacheSource.loop = false;
         instance.cacheSource.spatialBlend = 1.0f;
@@ -256,7 +256,7 @@ public class AudioManager : MonoBehaviour
     {
         instance.cacheSource = instance.GetAudioSource();
         instance.cacheSource.clip = clip;
-        instance.cacheSource.volume = 1f;
+        instance.cacheSource.volume = volume;
         instance.cacheSource.pitch = pitch;
         instance.cacheSource.loop = false;
         instance.cacheSource.spatialBlend = 1.0f;
